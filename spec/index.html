@@ -800,7 +800,8 @@
         If checked, the <a href="#the-layer-element"><code>layer</code></a> is drawn on the map in the sequence it is found in the parent element; if not <a href="#attr-layer-checked"><code>checked</code></a>
         the <a href="#the-layer-element"><code>layer</code></a> is not drawn but the layer control should remain visible in the <a href="#expose-a-user-interface-to-the-user">exposed user interface</a> to the user, in an "unchecked" state.</p>
         
-        <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-src"><code>src</code></dfn> attribute value is the URL of a web resource encoded in <a href="#structure">Map Markup Language</a>.</p>
+        <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-src"><code>src</code></dfn> attribute value gives the <a href="https://url.spec.whatwg.org/#concept-url">URL</a> of a <a href="#structure">Map Markup Language</a> media resource. If present, it must be a <a href="https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces">valid non-empty URL potentially surrounded by spaces</a>.</p>
+        
         <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-hidden"><code>hidden</code></dfn> boolean attribute can be set to remove the <a href="#the-layer-element"><code>layer</code></a> from the <em>map layer control, but it will remain displayed on the map</em>.  In order to
         remove the <a href="#the-layer-element"><code>layer</code></a> from the map display, it can be have its <a href="#attr-layer-checked"><code>checked</code></a> property toggled, or be removed from the DOM.</p>
         <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-disabled"><code>disabled</code></dfn> property is a read-only boolean indicator of the visibility of the layer on the map.  If the layer is not visible due to errors, including projection,
