@@ -687,21 +687,21 @@
         <p>The <code id="dom-layers">layers</code> attribute must return an <a href="https://dom.spec.whatwg.org/#htmlcollection"><code>HTMLCollection</code></a> 
         rooted at the <a href="#the-map-element"><code>map</code></a> node, whose filter matches only <a href="#the-layer-element"><code>layer</code></a> child elements of this <a href="#the-map-element"><code>map</code></a> element.</p>
         
-        <p>The <dfn id="attr-map-zoom"><code>zoom</code></dfn> attribute indirectly identifies an initial scale of the map.</p>
+        <p>The <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-zoom"><code>zoom</code></dfn> attribute indirectly identifies an initial scale of the map.</p>
         <p>The <a href="#dom-htmlmapelement-zoom"><code>zoom</code></a> IDL attribute must <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflect">reflect</a> the content attribute of the same name.</p>
         
-        <p>The <dfn id="attr-map-lat"><code>lat</code></dfn></a> and <dfn id="attr-map-lon"><code>lon</code></dfn> attributes locate the initial center of the map.</p>
+        <p>The <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-lat"><code>lat</code></dfn></a> and <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-lon"><code>lon</code></dfn> attributes locate the initial center of the map.</p>
         <p>The <a href="#dom-htmlmapelement-lat"><code>lat</code></a> and <a href="#dom-htmlmapelement-lon"><code>lon</code></a> IDL attributes must <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflect">reflect</a> the content attribute of the same name.</p>
 
-        <p>The <dfn id="attr-map-controls"><code>controls</code></dfn> attribute is a <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute">boolean attribute</a>. If present, it indicates that the author has not provided scripted controls and would like the user agent to provide its own set of controls.</p>
+        <p>The <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-controls"><code>controls</code></dfn> attribute is a <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute">boolean attribute</a>. If present, it indicates that the author has not provided scripted controls and would like the user agent to provide its own set of controls.</p>
         <!-- https://html.spec.whatwg.org/multipage/media.html#user-interface -->
-        <p>If the attribute is present, or if <a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript">scripting is disabled</a> for the <a href="https://html.spec.whatwg.org/multipage/media.html#media-element">media element</a>, then the user agent should <dfn id="expose-a-user-interface-to-the-user"><strong>expose a user interface to the user</strong></dfn>.
+        <p>If the attribute is present, or if <a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript">scripting is disabled</a> for the <a href="https://html.spec.whatwg.org/multipage/media.html#media-element">media element</a>, then the user agent should <dfn data-dfn-for="map" data-dfn-type="dfn" id="expose-a-user-interface-to-the-user"><strong>expose a user interface to the user</strong></dfn>.
           This user interface should include features to zoom in, zoom out, pan to an arbitrary position in the content, and show the media content in manners more suitable to the user (e.g. fullscreen map or in an independent resizable window). Other controls may also be made available.</p>
         <p>The <a href="#dom-htmlmapelement-controls"><code>controls</code></a> IDL attribute must <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflect">reflect</a> the content attribute of the same name.</p>
         
-        <p>The <dfn id="attr-map-controlslist"><code>controlslist</code></dfn> attribute, when specified, helps the user agent select what controls to show on the media element whenever the user agent shows its own set of controls.
+        <p>The <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-controlslist"><code>controlslist</code></dfn> attribute, when specified, helps the user agent select what controls to show on the media element whenever the user agent shows its own set of controls.
           Its value must be an <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens">unordered set of unique space-separated tokens</a> that are <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive">ASCII case-insensitive</a>.
-          The allowed values are <dfn id="attr-map-controlslist-nofullscreen"><code>nofullscreen</code></dfn>, <dfn id="attr-map-controlslist-nolayer"><code>nolayer</code></dfn> and <dfn id="attr-map-controlslist-nozoom"><code>nozoom</code></dfn>.</p>
+          The allowed values are <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-controlslist-nofullscreen"><code>nofullscreen</code></dfn>, <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-controlslist-nolayer"><code>nolayer</code></dfn> and <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-controlslist-nozoom"><code>nozoom</code></dfn>.</p>
           
         <p>The <a href="#attr-map-controlslist-nofullscreen"><code>nofullscreen</code></a> keyword hints that the fullscreen mode control should be hidden when using the user agent's own set of controls for the media element.</p>
         <p>The <a href="#attr-map-controlslist-nolayer"><code>nolayer</code></a> keyword hints that the layer control should be hidden when using the user agent's own set of controls for the media element.</p>
@@ -717,7 +717,7 @@
         
         <p class="note">A user agent might ignore the <a href="#attr-map-controlslist-nofullscreen"><code>nofullscreen</code></a> keyword if the content area containing the map is small, such as on a mobile device.</p>
         
-        <p>The <dfn id="attr-map-projection"><code>projection</code></dfn> attribute value identifies the coordinate system for the map and all the <a href="#the-layer-element"><code>layer</code></a> element children, with the exception of
+        <p>The <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-projection"><code>projection</code></dfn> attribute value identifies the coordinate system for the map and all the <a href="#the-layer-element"><code>layer</code></a> element children, with the exception of
         <a href="#the-layer-element"><code>layer</code></a> children in the WGS84 projection.  WGS84 serves as a "wild-card" projection; features encoded in longitude, latitude values according to this projection can often be re-projected for
         use on maps encoded in other projections.  As such, <a href="#the-layer-element"><code>layer</code></a> children do not have a projection attribute, in that they are verified to share the projection declared by their
         parent <a href="#the-map-element"><code>map</code></a> element.  Once established, the projection of the <a href="#the-map-element"><code>map</code></a> is read-only.
@@ -725,7 +725,7 @@
         <a href="#tiled-coordinate-reference-systems-table">Tiled Coordinate Reference Systems</a> table.
         </p>
         
-        <p>The <a href="#the-map-element"><code>map</code></a> element supports the <dfn id="attr-map-width"><code>width</code></dfn> and <dfn id="attr-map-height"><code>height</code></dfn> <a href="https://html.spec.whatwg.org/multipage/embedded-content-other.html#dimension-attributes">dimension attributes</a>. [[HTML]]</p>
+        <p>The <a href="#the-map-element"><code>map</code></a> element supports the <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-width"><code>width</code></dfn> and <dfn data-dfn-for="map" data-dfn-type="dfn" id="attr-map-height"><code>height</code></dfn> <a href="https://html.spec.whatwg.org/multipage/embedded-content-other.html#dimension-attributes">dimension attributes</a>. [[HTML]]</p>
         <p>The <a href="https://drafts.csswg.org/css-images/#default-object-size">default object size</a> is a width of 300 <a href="https://drafts.csswg.org/css-values/#px">CSS pixels</a> and a height of 150 <a href="https://drafts.csswg.org/css-values/#px">CSS pixels</a>. [[css-images-3]]</p>
         </div>
         </section>
@@ -797,12 +797,12 @@
         <a href="https://html.spec.whatwg.org/multipage/media.html#media-element"><code>source</code></a> element is selected by the user agent for play, the <a href="#the-map-element"><code>map</code></a> element's child <a href="#the-layer-element"><code>layer</code></a> elements are 
         visually combined with sibling <a href="#the-layer-element"><code>layer</code></a> elements and presented by the parent <a href="#the-map-element"><code>map</code></a> element as a pan-able, zoom-able two-dimensional image. 
         The display state (on / off) of the content represented by the <a href="#the-layer-element"><code>layer</code></a> element is controlled by
-        the <dfn id="attr-layer-checked"><code>checked</code></dfn> boolean attribute and corresponding property.  If checked, the <a href="#the-layer-element"><code>layer</code></a> is drawn on the map in the sequence it is found in the parent element; if not <a href="#attr-layer-checked"><code>checked</code></a>
+        the <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-checked"><code>checked</code></dfn> boolean attribute and corresponding property.  If checked, the <a href="#the-layer-element"><code>layer</code></a> is drawn on the map in the sequence it is found in the parent element; if not <a href="#attr-layer-checked"><code>checked</code></a>
         the <a href="#the-layer-element"><code>layer</code></a> is not drawn but should remain visible in the <a href="#the-map-element"><code>map</code></a> element's representation of <code>controls</code> in an "unchecked" state.</p>
-        <p>The <dfn id="attr-layer-src"><code>src</code></dfn> attribute value is the URL of a web resource encoded in <a href="#structure">Map Markup Language</a>.</p>
-        <p>The <dfn id="attr-layer-hidden"><code>hidden</code></dfn> boolean attribute can be set to remove the <a href="#the-layer-element"><code>layer</code></a> from the <em>map layer control, but it will remain displayed on the map</em>.  In order to
+        <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-src"><code>src</code></dfn> attribute value is the URL of a web resource encoded in <a href="#structure">Map Markup Language</a>.</p>
+        <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-hidden"><code>hidden</code></dfn> boolean attribute can be set to remove the <a href="#the-layer-element"><code>layer</code></a> from the <em>map layer control, but it will remain displayed on the map</em>.  In order to
         remove the <a href="#the-layer-element"><code>layer</code></a> from the map display, it can be have its <a href="#attr-layer-checked"><code>checked</code></a> property toggled, or be removed from the DOM.</p>
-        <p>The <dfn id="attr-layer-disabled"><code>disabled</code></dfn> property is a read-only boolean indicator of the visibility of the layer on the map.  If the layer is not visible due to errors, including projection,
+        <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-disabled"><code>disabled</code></dfn> property is a read-only boolean indicator of the visibility of the layer on the map.  If the layer is not visible due to errors, including projection,
         zoom or extent mismatch, the property will be true and if the layer is present in the layer control (i.e. <a href="#attr-layer-hidden"><code>hidden</code></a> is false), it will be disabled in that control i.e. not checkable.</p>
 
         </section>
@@ -846,11 +846,11 @@
         <p>The <a href="#the-area-element"><code>area</code></a> element allows the HTML author to encode and style a limited set of spatial feature types on its parent <a href="#the-map-element"><code>map</code></a> element, 
         using familiar [[HTML]] <a href="https://html.spec.whatwg.org/multipage/image-maps.html#image-map">image map</a> coordinates.  Such features
         can be optionally designated as hyperlinks to be selected by the user.</p>
-        <p>If present, the <dfn id="attr-area-href"><code>href</code></dfn> attribute identifies the designated coordinate area as a hyperlink.  If no <a href="#attr-area-href"><code>href</code></a> attribute exists, the area is designated as a non-interactive area.
-        The <dfn id="attr-area-alt"><code>alt</code></dfn> attribute specifies a label which can be used by the user agent for ephemeral and non-visual labelling of the area.  </p>
+        <p>If present, the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-href"><code>href</code></dfn> attribute identifies the designated coordinate area as a hyperlink.  If no <a href="#attr-area-href"><code>href</code></a> attribute exists, the area is designated as a non-interactive area.
+        The <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-alt"><code>alt</code></dfn> attribute specifies a label which can be used by the user agent for ephemeral and non-visual labelling of the area.  </p>
         <p>If the <a href="#the-area-element"><code>area</code></a> element has no <a href="#attr-area-href"><code>href</code></a> attribute, then the area represented by the element cannot be selected, and the <a href="#attr-area-alt"><code>alt</code></a> attribute must be omitted.</p>
-        <p>The <dfn id="attr-area-coords"><code>coords</code></dfn> attribute is a 
-        comma-separated list of integer coordinate values which delimit the geometry of the (area) feature.  The <dfn id="attr-area-shape"><code>shape</code></dfn> attribute identifies the type of geometry which is
+        <p>The <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-coords"><code>coords</code></dfn> attribute is a 
+        comma-separated list of integer coordinate values which delimit the geometry of the (area) feature.  The <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape"><code>shape</code></dfn> attribute identifies the type of geometry which is
         encoded as coordinates in the <a href="#attr-area-coords"><code>coords</code></a> attribute.</p>
         <p>The shape attribute is an enumerated attribute. The following table lists the keywords defined for this attribute. The states given in the first cell of the rows with 
         keywords give the states to which those keywords map. </p>
@@ -861,32 +861,32 @@
         <tbody>
         <tr>
           <td><a href="#attr-area-shape-circle">Circle state</a></td>
-          <td><dfn id="attr-area-shape-keyword-circle"><code>circle</code></dfn></td>
+          <td><dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-keyword-circle"><code>circle</code></dfn></td>
           <td></td>
         </tr>
         <tr>
           <td><a href="#attr-area-shape-default">Default state</a></td>
-          <td><dfn id="attr-area-shape-keyword-default"><code>default</code></dfn></td>
+          <td><dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-keyword-default"><code>default</code></dfn></td>
           <td></td>
         </tr>
         <tr>
           <td><a href="#attr-area-shape-polygon">Polygon state</a></td>
-          <td><dfn id="attr-area-shape-keyword-poly"><code>poly</code></dfn></td>
+          <td><dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-keyword-poly"><code>poly</code></dfn></td>
           <td></td>
         </tr>
         <tr>
           <td><a href="#attr-area-shape-rectangle">Rectangle state</a></td>
-          <td><dfn id="attr-area-shape-keyword-rect"><code>rect</code></dfn></td>
+          <td><dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-keyword-rect"><code>rect</code></dfn></td>
           <td></td>
         </tr>
         <tr>
           <td><a href="#attr-area-shape-marker">Marker state</a></td>
-          <td><dfn id="attr-area-shape-keyword-marker"><code>marker</code></dfn></td>
+          <td><dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-keyword-marker"><code>marker</code></dfn></td>
           <td>new</td>
         </tr>
         <tr>
           <td><a href="#attr-area-shape-line">Line state</a></td>
-          <td><dfn id="attr-area-shape-keyword-line"><code>line</code></dfn></td>
+          <td><dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-keyword-line"><code>line</code></dfn></td>
           <td>new</td>
         </tr>
         </tbody>
@@ -896,28 +896,28 @@
         <p>The <a href="#attr-area-coords"><code>coords</code></a> attribute must, if specified, contain a valid list of integers. This attribute gives the coordinates for the shape described by the 
         <a href="#attr-area-shape"><code>shape</code></a> attribute. The processing for this attribute is described as part of the <a href="https://html.spec.whatwg.org/multipage/image-maps.html#image-map">image map</a> processing model.</p>
 
-        <p>In the <dfn id="attr-area-shape-circle">circle state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute present, with three integers, 
+        <p>In the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-circle">circle state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute present, with three integers, 
         the last of which must be non-negative. The first integer must be the distance in CSS pixels from the left edge of the image to the center of the circle, the second integer must be the distance 
         in CSS pixels from the top edge of the image to the center of the circle, and the third integer must be the radius of the circle, 
         again in CSS pixels.</p>
 
-        <p>In the <dfn id="attr-area-shape-default">default state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must not have a <a href="#attr-area-coords"><code>coords</code></a> attribute. (The area is the 
+        <p>In the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-default">default state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must not have a <a href="#attr-area-coords"><code>coords</code></a> attribute. (The area is the 
         whole area of the map on the page.)</p>
 
-        <p>In the <dfn id="attr-area-shape-polygon">polygon state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with at least six integers, 
+        <p>In the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-polygon">polygon state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with at least six integers, 
         and the number of integers must be even. Each pair of integers must represent a coordinate given as the distances from the left and the top of the 
         map in CSS pixels respectively, and all the coordinates together must represent the points of the polygon, in order.</p>
 
-        <p>In the <dfn id="attr-area-shape-rectangle">rectangle state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with exactly four integers, 
+        <p>In the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-rectangle">rectangle state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with exactly four integers, 
         the first of which must be less than the third, and the second of which must be less than the fourth. The four values must represent, respectively, the 
         distance from the left edge of the map to the left side of the rectangle, the distance from the top edge to the top side, the distance from the left edge 
         to the right side, and the distance from the top edge to the bottom side, all in CSS pixels.</p>
 
-        <p>In the <dfn id="attr-area-shape-marker">marker state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with exactly two integers. 
+        <p>In the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-marker">marker state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with exactly two integers. 
         The first integer must be the distance in CSS pixels from the left edge of the map to the top left corner of the marker, the second integer must be the distance 
         in CSS pixels from the top edge of the map to the top left corner of the marker.</p>
 
-        <p>In the <dfn id="attr-area-shape-line">line state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with at least four
+        <p>In the <dfn data-dfn-for="area" data-dfn-type="dfn" id="attr-area-shape-line">line state</dfn>, <a href="#the-area-element"><code>area</code></a> elements must have a <a href="#attr-area-coords"><code>coords</code></a> attribute with at least four
         integers, and the number of integers must be even.  Each pair of integers must represent a coordinate given as the distances from the left and the top of the 
         map in CSS pixels respectively, and all the coordinates together must represent the points of the line, in order.</p>
 
@@ -1432,7 +1432,7 @@
           </dd>
         </dl>
         <p>The <a href="#the-mapml-element"><code>mapml</code></a> element is the the root element of a MapML document, and must contain one <a href="#the-head-element"><code>head</code></a> element followed by one <a href="#the-body-element"><code>body</code></a> element.</p>
-        <p>The <a href="#the-mapml-element"><code>mapml</code></a> element may carry a <dfn id="attr-mapml-lang"><code>lang</code></a> attribute, as <a href="https://html.spec.whatwg.org/multipage/dom.html#attr-lang">defined</a> by [[HTML]].</p>
+        <p>The <a href="#the-mapml-element"><code>mapml</code></a> element may carry a <dfn data-dfn-for="mapml" data-dfn-type="dfn" id="attr-mapml-lang"><code>lang</code></a> attribute, as <a href="https://html.spec.whatwg.org/multipage/dom.html#attr-lang">defined</a> by [[HTML]].</p>
         </section>
         <section>
         <h5>The <code>&lt;<dfn id="the-head-element">head</dfn>&gt;</code> element</h5>
@@ -1460,7 +1460,7 @@
         </p>
         </section>
         <section>
-        <h5>The <code>&lt;<dfn id="the-title-element">title</dfn>&gt;</code> element</h5>
+        <h5>The <code>&lt;<dfn data-dfn-for="head" data-dfn-type="dfn" id="the-title-element">title</dfn>&gt;</code> element</h5>
         <dl class="def">
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-categories">Categories</a>:</dt>
           <dd><a href="https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2">Metadata content</a>.</dd>
@@ -1580,7 +1580,7 @@
           The <a href="#the-link-element"><code>link</code></a> element allows authors to link their document to other resources.
         </p>
         <p>
-          The destination of the link(s) is given by the <dfn id="attr-link-href"><code>href</code></dfn> attribute, which must be present and must contain a valid non-empty URL potentially surrounded by spaces.
+          The destination of the link(s) is given by the <dfn data-dfn-for="link" data-dfn-type="dfn" id="attr-link-href"><code>href</code></dfn> attribute, which must be present and must contain a valid non-empty URL potentially surrounded by spaces.
           <span>
             If the <a href="#attr-link-href"><code>href</code></a> attribute is absent, then the element does not define a link.
           </span>
@@ -1589,7 +1589,7 @@
           A <a href="#the-link-element"><code>link</code></a> element must have a <a href="#attr-link-rel"><code>rel</code></a> attribute. If the <code>rel</code> attribute is absent, then the element does not define a link.
         </p>
         <p>
-          The types of link are given by the value of the <dfn id="attr-link-rel"><code>rel</code></dfn> attribute, which generally has a value that is a single token, except in the case of the link@rel='self style' value described below.
+          The types of link are given by the value of the <dfn data-dfn-for="link" data-dfn-type="dfn" id="attr-link-rel"><code>rel</code></dfn> attribute, which generally has a value that is a single token, except in the case of the link@rel='self style' value described below.
           The allowed keywords and their meanings are defined below. If the <code>rel</code> attribute is absent, has no keywords, or if none of the keywords used are allowed according to the definitions in this specification, then the
           element does not create any links.
         </p>
@@ -1631,59 +1631,59 @@
           <tbody>
             <tr>
               <td>
-                <dfn id="link-rel-alternate"><code>alternate</code></dfn>
+                <dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-alternate"><code>alternate</code></dfn>
               </td>
               <td>Gives alternate representations of the current document.</td>
             </tr>
             <tr>
               <td>
-                <dfn id="link-rel-legend"><code>legend</code></dfn>
+                <dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-legend"><code>legend</code></dfn>
               </td>
               <td>Indicates the link to a legend resource.</td>
             </tr>
             <tr>
               <td>
-                <dfn id="link-rel-license"><code>license</code></dfn>
+                <dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-license"><code>license</code></dfn>
               </td>
               <td>Indicates that some or all of the content of the current document is covered by the copyright license described by the referenced document.</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-stylesheet"><code>stylesheet</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-stylesheet"><code>stylesheet</code></dfn></td>
               <td>Imports a stylesheet.</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-style"><code>style</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-style"><code>style</code></dfn></td>
               <td>Indicates a map resource that is equivalent to the current resource, in the same TCRS but with a different map style.</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-self"><code>self</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-self"><code>self</code></dfn></td>
               <td>
                 Indicates that the linked resource is the current resource. When used in combination with the style rel value, indicates that the linked resource is the current selected style from a group of alternative styles for the
                 current layer. There should only be one such link that has both rel values 'self' and 'style' in a document.
               </td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-zoomin"><code>zoomin</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-zoomin"><code>zoomin</code></dfn></td>
               <td>Indicates a resource that may be used at a zoom level greater than the maximum zoom of the current extent.</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-zoomout"><code>zoomout</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-zoomout"><code>zoomout</code></dfn></td>
               <td>Indicates a resource that may be used at a zoom level less than the minimum zoom of the current extent.</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-tile"><code>tile</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-tile"><code>tile</code></dfn></td>
               <td>The templated resource reference identifies a tile</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-image"><code>image</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-image"><code>image</code></dfn></td>
               <td>The templated resource reference identifies an image that covers the map extent</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-features"><code>features</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-features"><code>features</code></dfn></td>
               <td>The templated resource reference identifies a feature collection</td>
             </tr>
             <tr>
-              <td><dfn id="link-rel-query"><code>query</code></dfn></td>
+              <td><dfn data-dfn-for="link" data-dfn-type="dfn" id="link-rel-query"><code>query</code></dfn></td>
               <td>The templated resource reference identifies a query resource at a location</td>
             </tr>
           </tbody>
@@ -1747,7 +1747,7 @@
         <p>
           The <a href="#the-extent-element"><code>extent</code></a> element is a map-associated affordance, which contains input and link elements, whose job it is to serialize location event properties that can be submitted to a server for processing. 
         </p>
-        <p>The <dfn id="attr-extent-units"><code>units</code></dfn> attribute indicates the parent TCRS that location events shall be generated for, and serialized as requested by the <code>extent</code>'s contents.</p>
+        <p>The <dfn data-dfn-for="extent" data-dfn-type="dfn" id="attr-extent-units"><code>units</code></dfn> attribute indicates the parent TCRS that location events shall be generated for, and serialized as requested by the <code>extent</code>'s contents.</p>
 
         </section>
         <section>
@@ -1814,7 +1814,7 @@
           a specific map area.
         </p>
         <p>
-          The <dfn id="attr-input-type"><code>type</code></a> attribute controls the data type (and associated control) of the element. It is an enumerated attribute. The following table lists the keywords and states for the attribute — the keywords in the left column
+          The <dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-type"><code>type</code></a> attribute controls the data type (and associated control) of the element. It is an enumerated attribute. The following table lists the keywords and states for the attribute — the keywords in the left column
           map to the states in the cell in the second column on the same row as the keyword.
         </p>
         <table id="attr-input-type-keywords" class="def">
@@ -1831,31 +1831,31 @@
           </thead>
           <tbody>
             <tr>
-              <td><dfn id="attr-input-type-zoom"><code>zoom</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-type-zoom"><code>zoom</code></dfn></td>
               <td>zoom</td>
               <td>An integer value</td>
               <td>A derived property of a displayed map</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-type-location"><code>location</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-type-location"><code>location</code></dfn></td>
               <td>location</td>
               <td>A string value with no line breaks</td>
               <td>A location, the units and axis of which are specified by sibling attributes.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-type-width"><code>width</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-type-width"><code>width</code></dfn></td>
               <td>width of the extent</td>
               <td>A string value with no line breaks</td>
               <td>.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-type-height"><code>height</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-type-height"><code>height</code></dfn></td>
               <td>height of the extent</td>
               <td>A string value with no line breaks</td>
               <td>.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-type-hidden"><code>hidden</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-type-hidden"><code>hidden</code></dfn></td>
               <td>hidden</td>
               <td>An arbitrary string</td>
               <td>n/a</td>
@@ -1882,12 +1882,12 @@
           </thead>
           <tbody>
             <tr>
-              <td><dfn id="attr-input-units-tcrs"><code>tcrs</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-units-tcrs"><code>tcrs</code></dfn></td>
               <td>For each zoom level, locations are expressed in pixel coordinates with the origin at the top-left corner of the pixel space.</td>
               <td>OGC Tile Matrix Set "tile matrix (i',j')".</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-units-pcrs"><code>pcrs</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-units-pcrs"><code>pcrs</code></dfn></td>
               <td>
                 The location is expressed in projected coordinates. Units are meters except for WGS84 where pcrs AND gcrs coordinates are in longitude-latitude. E.g. meters for OSMTILE, which has an associated projected coordinate reference
                 system of EPSG:3857.
@@ -1895,13 +1895,13 @@
               <td>Commonly represented as (x,y)</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-units-gcrs"><code>gcrs</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-units-gcrs"><code>gcrs</code></dfn></td>
               <td>The location is expressed in the geodetic coordinate system associated to the TCRS, e.g. decimal degrees for the OSMTILE TCRS.</td>
               <td>Commonly represented as (long,lat)</td>
             </tr>
 
             <tr>
-              <td><dfn id="attr-input-units-map"><code>map</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-units-map"><code>map</code></dfn></td>
               <td>
                 The map coordinate system is defined by the state of the map system. At each pan and / or zoom, the map coordinate origin is reset within the Location is expressed in pixel coordinates with the origin starting at the upper
                 left corner of the extent increasing right and downwards, respectively.
@@ -1909,7 +1909,7 @@
               <td>WMS GetFeatureInfo (i,j)</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-units-tilematrix"><code>tilematrix</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-units-tilematrix"><code>tilematrix</code></dfn></td>
               <td>
                 For each zoom level, locations are expressed in tile row and column index (0-based) values, with the origin at the top-left corner of the tiled space, with column index values increasing right and row index values increasing
                 downwards.
@@ -1917,7 +1917,7 @@
               <td>WMTS GetTile (TileCol, TileRow).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-units-tile"><code>tile</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-units-tile"><code>tile</code></dfn></td>
               <td>
                 For each tile within every zoom level, a location is expressed in pixel coordinates with the origin at the upper left corner of the tile increasing right and downwards, respectively and ending at 256. The combination of
                 tilematrix and tile coordinates yields a location reference with pixel-sized precision.
@@ -1945,39 +1945,39 @@
           </thead>
           <tbody>
             <tr>
-              <td><dfn id="attr-input-position-top-left"><code>top-left</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-top-left"><code>top-left</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-top-right"><code>top-right</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-top-right"><code>top-right</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-bottom-left"><code>bottom-left</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-bottom-left"><code>bottom-left</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-bottom-right"><code>bottom-right</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-bottom-right"><code>bottom-right</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-center-left"><code>center-left</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-center-left"><code>center-left</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-center-right"><code>center-right</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-center-right"><code>center-right</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-top-center"><code>top-center</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-top-center"><code>top-center</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-bottom-center"><code>bottom-center</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-bottom-center"><code>bottom-center</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-position-center"><code>center</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-position-center"><code>center</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
           </tbody>
@@ -1995,43 +1995,43 @@
           </thead>
           <tbody>
             <tr>
-              <td><dfn id="attr-input-axis-x"><code>x</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-x"><code>x</code></dfn></td>
               <td>TCRS x axis.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-y"><code>y</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-y"><code>y</code></dfn></td>
               <td>TCRS y axis.</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-row"><code>row</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-row"><code>row</code></dfn></td>
               <td>TileMatrix row axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-column"><code>column</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-column"><code>column</code></dfn></td>
               <td>TileMatrix column axis (parallel to x axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-i"><code>i</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-i"><code>i</code></dfn></td>
               <td>Map or tile CS i axis (parallel to x axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-j"><code>j</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-j"><code>j</code></dfn></td>
               <td>Map or tile CS j axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-easting"><code>easting</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-easting"><code>easting</code></dfn></td>
               <td>Projected coordinate reference system axis (parallel to x axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-northing"><code>northing</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-northing"><code>northing</code></dfn></td>
               <td>Projected coordinate reference system axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-latitude"><code>latitude</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-latitude"><code>latitude</code></dfn></td>
               <td>Geodetic coordinate reference system axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><dfn id="attr-input-axis-longitude"><code>longitude</code></dfn></td>
+              <td><dfn data-dfn-for="input" data-dfn-type="dfn" id="attr-input-axis-longitude"><code>longitude</code></dfn></td>
               <td>Geodetic coordinate reference system axis (parallel to x axis of TCRS).</td>
             </tr>
           </tbody>
@@ -2315,21 +2315,21 @@
           </thead>
           <tbody>
             <tr>
-              <td><code><dfn id="the-point-element">point</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-point-element">point</dfn></code></td>
               <td>
                 A <a href="#the-coordinates-element"><code>coordinates</code></a> element containing a single position.
               </td>
               <td>Axis order - x followed by y, separated by whitespace.</td>
             </tr>
             <tr>
-              <td><code><dfn id="the-linestring-element">linestring</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-linestring-element">linestring</dfn></code></td>
               <td>
                 A <a href="#the-coordinates-element"><code>coordinates</code></a> element containing two or more positions.
               </td>
               <td>Axis order - x followed by y, separated by whitespace.</td>
             </tr>
             <tr>
-              <td><code><dfn id="the-polygon-element">polygon</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-polygon-element">polygon</dfn></code></td>
               <td>
                 One or more <a href="#the-coordinates-element"><code>coordinates</code></a> elements, each containing three or more positions.
               </td>
@@ -2346,21 +2346,21 @@
               </td>
             </tr>
             <tr>
-              <td><code><dfn id="the-multipoint-element">multipoint</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-multipoint-element">multipoint</dfn></code></td>
               <td>
                 One <a href="#the-coordinates-element"><code>coordinates</code></a> element, containing one or more positions.
               </td>
               <td>Axis order - x followed by y, separated by whitespace.</td>
             </tr>
             <tr>
-              <td><code><dfn id="the-multilinestring-element">multilinestring</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-multilinestring-element">multilinestring</dfn></code></td>
               <td>
                 One or more <a href="#the-coordinates-element"><code>coordinates</code></a> elements, each containing two or more positions.
               </td>
               <td>Axis order - x followed by y, separated by whitespace.</td>
             </tr>
             <tr>
-              <td><code><dfn id="the-multipolygon-element">multipolygon</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-multipolygon-element">multipolygon</dfn></code></td>
               <td>
                 One or more <a href="#the-polygon-element"><code>polygon</code></a> elements.
               </td>
@@ -2370,7 +2370,7 @@
               </td>
             </tr>
             <tr>
-              <td><code><dfn id="the-geometrycollection-element">geometrycollection</dfn></code></td>
+              <td><code><dfn data-dfn-for="geometry" data-dfn-type="dfn" id="the-geometrycollection-element">geometrycollection</dfn></code></td>
               <td> One or more <a href="#the-point-element"><code>point</code></a>,
                 <a href="#the-linestring-element"><code>linestring</code></a>, <a href="#the-polygon-element"><code>polygon</code></a>, <a href="#the-multipoint-element"><code>multipoint</code></a>, <a href="#the-multilinestring-element"><code>multilinestring</code></a>, <a href="#the-multipolygon-element"><code>multipolygon</code></a> elements.</td>
                 
