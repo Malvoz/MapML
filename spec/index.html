@@ -626,14 +626,14 @@
 
         <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes">Content attributes</a>:</dt>
         <dd><a href="https://html.spec.whatwg.org/multipage/dom.html#global-attributes">Global attributes</a>.</dd>
-        <dd><code>zoom</code> — A positive integer zoom (scale) value.</dd>
-        <dd><code>lat</code> — A decimal WGS84 latitude value for the map center.</dd>
-        <dd><code>lon</code> — A decimal WGS84 longitude value for the map center.</dd>
-        <dd><code>projection</code> — A case-sensitive string <a href="#tiled-coordinate-reference-systems-table">identifier</a> of the MapML coordinate reference system used by the map. Default is <a href="#tcrs-OSMTILE"><code>OSMTILE</code></a>.</dd>
-        <dd><code>controls</code> — Show user agent controls.</dd>
-        <dd><code>controlslist</code> — Show/hide specific user agent controls.</dd>
-        <dd><code>width</code> — Horizontal dimension.</dd>
-        <dd><code>height</code> — Vertical dimension.</dd>
+        <dd><a href="#attr-map-zoom"><code>zoom</code></a> — A positive integer zoom (scale) value.</dd>
+        <dd><a href="#attr-map-lat"><code>lat</code></a> — A decimal WGS84 latitude value for the map center.</dd>
+        <dd><a href="#attr-map-lon"><code>lon</code></a> — A decimal WGS84 longitude value for the map center.</dd>
+        <dd><a href="#attr-map-projection"><code>projection</code></a> — A case-sensitive string <a href="#tiled-coordinate-reference-systems-table">identifier</a> of the MapML coordinate reference system used by the map. Default is <a href="#tcrs-OSMTILE"><code>OSMTILE</code></a>.</dd>
+        <dd><a href="#attr-map-controls"><code>controls</code></a> — Show user agent controls.</dd>
+        <dd><a href="#attr-map-controlslist"><code>controlslist</code></a> — Show/hide specific user agent controls.</dd>
+        <dd><a href="#attr-map-width"><code>width</code></a> — Horizontal dimension.</dd>
+        <dd><a href="#attr-map-height"><code>height</code></a> — Vertical dimension.</dd>
         <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-tag-omission">Tag omission in text/html</a>:</dt>
         <dd>Neither tag is omissible.</dd>
         <dt>Allowed <a href="https://www.w3.org/TR/2014/REC-html5-20141028/dom.html#aria-role-attribute">ARIA role attribute</a> values:</dt>
@@ -725,7 +725,7 @@
         <a href="#tiled-coordinate-reference-systems-table">Tiled Coordinate Reference Systems</a> table.
         </p>
         
-        <p>The <a href="#the-map-element"><code>map</code></a> element supports the <code>width</code> and <code>height</code> <a href="https://html.spec.whatwg.org/multipage/embedded-content-other.html#dimension-attributes">dimension attributes</a>. [[HTML]]</p>
+        <p>The <a href="#the-map-element"><code>map</code></a> element supports the <dfn id="attr-map-width"><code>width</code></dfn> and <dfn id="attr-map-height"><code>height</code></dfn> <a href="https://html.spec.whatwg.org/multipage/embedded-content-other.html#dimension-attributes">dimension attributes</a>. [[HTML]]</p>
         <p>The <a href="https://drafts.csswg.org/css-images/#default-object-size">default object size</a> is a width of 300 <a href="https://drafts.csswg.org/css-values/#px">CSS pixels</a> and a height of 150 <a href="https://drafts.csswg.org/css-values/#px">CSS pixels</a>. [[css-images-3]]</p>
         </div>
         </section>
@@ -745,13 +745,13 @@
         <a href="https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2">Metadata content</a> describing nested <a href="#structure">Map Markup Language</a> content.</dd>
         <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes">Content attributes</a>:</dt>
         <dd><a href="https://html.spec.whatwg.org/multipage/dom.html#global-attributes">Global attributes</a>.</dd>
-        <dd id="attr-layer-src"><code>src</code> — Address of the resource.</dd>
-        <dd id="attr-layer-label"><code>label</code> — String label for the layer in the layer control, if displayed.</dd>
-        <dd id="attr-layer-checked"><code>checked</code> — Layer on/off status.</dd>
-        <dd id="attr-layer-disabled"><code>disabled</code> — Sets the disabled state of the layer in the layer control.</dd>
-        <dd id="attr-layer-hidden"><code>hidden</code> — Visibility status of the layer in the layer control.</dd>
-        <dd id="attr-layer-referrerpolicy"><code>referrerpolicy</code> — <a href="https://w3c.github.io/webappsec-referrer-policy/#referrer-policy">Referrer policy</a> for <a href="https://fetch.spec.whatwg.org/#concept-fetch">fetches</a> initiated by the element.</dd>
-        <dd id="attr-layer-crossorigin"><code>crossorigin</code> — A <a href="https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-settings-attribute">CORS settings attribute</a>, specifies how the element handles crossorigin requests.</dd>
+        <dd><a href="#attr-layer-src"><code>src</code></a> — Address of the resource.</dd>
+        <dd><a href="#attr-layer-label"><code>label</code></a> — String label for the layer in the layer control, if displayed.</dd>
+        <dd><a href="#attr-layer-checked"><code>checked</code></a> — Layer on/off status.</dd>
+        <dd><a href="#attr-layer-disabled"><code>disabled</code></a> — Sets the disabled state of the layer in the layer control.</dd>
+        <dd><a href="#attr-layer-hidden"><code>hidden</code></a> — Visibility status of the layer in the layer control.</dd>
+        <dd><a href="#attr-layer-referrerpolicy"><code>referrerpolicy</code></a> — <a href="https://w3c.github.io/webappsec-referrer-policy/#referrer-policy">Referrer policy</a> for <a href="https://fetch.spec.whatwg.org/#concept-fetch">fetches</a> initiated by the element.</dd>
+        <dd><a href="#attr-layer-crossorigin"><code>crossorigin</code></a> — A <a href="https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-settings-attribute">CORS settings attribute</a>, specifies how the element handles crossorigin requests.</dd>
         <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-tag-omission">Tag omission in text/html</a>:</dt>
         <dd>Neither tag is omissible.</dd>
         <dt>Allowed <a href="https://www.w3.org/TR/2014/REC-html5-20141028/dom.html#aria-role-attribute">ARIA role attribute</a> values:</dt>
@@ -797,12 +797,12 @@
         <a href="https://html.spec.whatwg.org/multipage/media.html#media-element"><code>source</code></a> element is selected by the user agent for play, the <a href="#the-map-element"><code>map</code></a> element's child <a href="#the-layer-element"><code>layer</code></a> elements are 
         visually combined with sibling <a href="#the-layer-element"><code>layer</code></a> elements and presented by the parent <a href="#the-map-element"><code>map</code></a> element as a pan-able, zoom-able two-dimensional image. 
         The display state (on / off) of the content represented by the <a href="#the-layer-element"><code>layer</code></a> element is controlled by
-        the <a href="#attr-layer-checked"><code>checked</code></a> boolean attribute and corresponding property.  If checked, the <a href="#the-layer-element"><code>layer</code></a> is drawn on the map in the sequence it is found in the parent element; if not <a href="#attr-layer-checked"><code>checked</code></a>
+        the <dfn id="attr-layer-checked"><code>checked</code></dfn> boolean attribute and corresponding property.  If checked, the <a href="#the-layer-element"><code>layer</code></a> is drawn on the map in the sequence it is found in the parent element; if not <a href="#attr-layer-checked"><code>checked</code></a>
         the <a href="#the-layer-element"><code>layer</code></a> is not drawn but should remain visible in the <a href="#the-map-element"><code>map</code></a> element's representation of <code>controls</code> in an "unchecked" state.</p>
-        <p>The <a href="#attr-layer-src"><code>src</code></a> attribute value is the URL of a web resource encoded in <a href="#structure">Map Markup Language</a>.</p>
-        <p>The <a href="#attr-layer-hidden"><code>hidden</code></a> boolean attribute can be set to remove the <a href="#the-layer-element"><code>layer</code></a> from the <em>map layer control, but it will remain displayed on the map</em>.  In order to
+        <p>The <dfn id="attr-layer-src"><code>src</code></dfn> attribute value is the URL of a web resource encoded in <a href="#structure">Map Markup Language</a>.</p>
+        <p>The <dfn id="attr-layer-hidden"><code>hidden</code></dfn> boolean attribute can be set to remove the <a href="#the-layer-element"><code>layer</code></a> from the <em>map layer control, but it will remain displayed on the map</em>.  In order to
         remove the <a href="#the-layer-element"><code>layer</code></a> from the map display, it can be have its <a href="#attr-layer-checked"><code>checked</code></a> property toggled, or be removed from the DOM.</p>
-        <p>The <a href="#attr-layer-disabled"><code>disabled</code></a> property is a read-only boolean indicator of the visibility of the layer on the map.  If the layer is not visible due to errors, including projection,
+        <p>The <dfn id="attr-layer-disabled"><code>disabled</code></dfn> property is a read-only boolean indicator of the visibility of the layer on the map.  If the layer is not visible due to errors, including projection,
         zoom or extent mismatch, the property will be true and if the layer is present in the layer control (i.e. <a href="#attr-layer-hidden"><code>hidden</code></a> is false), it will be disabled in that control i.e. not checkable.</p>
 
         </section>
@@ -817,10 +817,10 @@
         <dd><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-content-nothing">Nothing</a>.</dd>
         <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes">Content attributes</a>:</dt>
         <dd><a href="https://html.spec.whatwg.org/multipage/dom.html#global-attributes">Global attributes</a>.</dd>
-        <dd id="attr-area-href"><code>href</code> — Address of the hyperlink.</dd>
-        <dd id="attr-area-alt"><code>alt</code> — User-visible label.</dd>
-        <dd id="attr-area-coords"><code>coords</code> — Coordinates for the shape to be created on the map.</dd>
-        <dd id="attr-area-shape"><code>shape</code> — The kind of shape to be created on the map.</dd>
+        <dd><a href="#attr-area-href"><code>href</code></a> — Address of the hyperlink.</dd>
+        <dd><a href="#attr-area-alt"><code>alt</code></a> — User-visible label.</dd>
+        <dd><a href="#attr-area-coords"><code>coords</code></a> — Coordinates for the shape to be created on the map.</dd>
+        <dd><a href="#attr-area-shape"><code>shape</code></a> — The kind of shape to be created on the map.</dd>
         <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-tag-omission">Tag omission in text/html</a>:</dt>
         <dd>Neither tag is omissible.</dd>
         <dt>Allowed <a href="https://www.w3.org/TR/2014/REC-html5-20141028/dom.html#aria-role-attribute">ARIA role attribute</a> values:</dt>
@@ -846,11 +846,11 @@
         <p>The <a href="#the-area-element"><code>area</code></a> element allows the HTML author to encode and style a limited set of spatial feature types on its parent <a href="#the-map-element"><code>map</code></a> element, 
         using familiar [[HTML]] <a href="https://html.spec.whatwg.org/multipage/image-maps.html#image-map">image map</a> coordinates.  Such features
         can be optionally designated as hyperlinks to be selected by the user.</p>
-        <p>If present, the <a href="#attr-area-href"><code>href</code></a> attribute identifies the designated coordinate area as a hyperlink.  If no <a href="#attr-area-href"><code>href</code></a> attribute exists, the area is designated as a non-interactive area.
-        The <a href="#attr-area-alt"><code>alt</code></a> attribute specifies a label which can be used by the user agent for ephemeral and non-visual labelling of the area.  </p>
+        <p>If present, the <dfn id="attr-area-href"><code>href</code></dfn> attribute identifies the designated coordinate area as a hyperlink.  If no <a href="#attr-area-href"><code>href</code></a> attribute exists, the area is designated as a non-interactive area.
+        The <dfn id="attr-area-alt"><code>alt</code></dfn> attribute specifies a label which can be used by the user agent for ephemeral and non-visual labelling of the area.  </p>
         <p>If the <a href="#the-area-element"><code>area</code></a> element has no <a href="#attr-area-href"><code>href</code></a> attribute, then the area represented by the element cannot be selected, and the <a href="#attr-area-alt"><code>alt</code></a> attribute must be omitted.</p>
-        <p>The <a href="#attr-area-coords"><code>coords</code></a> attribute is a 
-        comma-separated list of integer coordinate values which delimit the geometry of the (area) feature.  The <a href="#attr-area-shape"><code>shape</code></a> attribute identifies the type of geometry which is
+        <p>The <dfn id="attr-area-coords"><code>coords</code></dfn> attribute is a 
+        comma-separated list of integer coordinate values which delimit the geometry of the (area) feature.  The <dfn id="attr-area-shape"><code>shape</code></dfn> attribute identifies the type of geometry which is
         encoded as coordinates in the <a href="#attr-area-coords"><code>coords</code></a> attribute.</p>
         <p>The shape attribute is an enumerated attribute. The following table lists the keywords defined for this attribute. The states given in the first cell of the rows with 
         keywords give the states to which those keywords map. </p>
@@ -1420,7 +1420,7 @@
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-content-model">Content model</a>:</dt>
           <dd>One <a href="#the-head-element"><code>head</code></a> element, followed by one <a href="#the-body-element"><code>body</code></a> element.</dd>
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes">Content attributes</a>:</dt>
-          <dd><code>lang</code> — the language of the document, expressed as a BCP 47 language tag. [[BCP47]]</dd>
+          <dd><a href="#attr-mapml-lang"><code>lang</code></a> — the language of the document, expressed as a BCP 47 language tag. [[BCP47]]</dd>
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-dom">DOM interface</a>:</dt>
           <dd>
             <pre class="idl">
@@ -1432,7 +1432,7 @@
           </dd>
         </dl>
         <p>The <a href="#the-mapml-element"><code>mapml</code></a> element is the the root element of a MapML document, and must contain one <a href="#the-head-element"><code>head</code></a> element followed by one <a href="#the-body-element"><code>body</code></a> element.</p>
-        <p>The <a href="#the-mapml-element"><code>mapml</code></a> element may carry a <code>lang</code> attribute, as <a href="https://html.spec.whatwg.org/multipage/dom.html#attr-lang">defined</a> by [[HTML]].</p>
+        <p>The <a href="#the-mapml-element"><code>mapml</code></a> element may carry a <dfn id="attr-mapml-lang"><code>lang</code></a> attribute, as <a href="https://html.spec.whatwg.org/multipage/dom.html#attr-lang">defined</a> by [[HTML]].</p>
         </section>
         <section>
         <h5>The <code>&lt;<dfn id="the-head-element">head</dfn>&gt;</code> element</h5>
@@ -1629,61 +1629,61 @@
             </tr>
           </thead>
           <tbody>
-            <tr id="link-rel-alternate">
+            <tr>
               <td>
-                <code>alternate</code>
+                <dfn id="link-rel-alternate"><code>alternate</code></dfn>
               </td>
               <td>Gives alternate representations of the current document.</td>
             </tr>
-            <tr id="link-rel-legend">
+            <tr>
               <td>
-                <code>legend</code>
+                <dfn id="link-rel-legend"><code>legend</code></dfn>
               </td>
               <td>Indicates the link to a legend resource.</td>
             </tr>
-            <tr id="link-rel-license">
+            <tr>
               <td>
-                <code>license</code>
+                <dfn id="link-rel-license"><code>license</code></dfn>
               </td>
               <td>Indicates that some or all of the content of the current document is covered by the copyright license described by the referenced document.</td>
             </tr>
-            <tr id="link-rel-stylesheet">
-              <td><code>stylesheet</code></td>
+            <tr>
+              <td><dfn id="link-rel-stylesheet"><code>stylesheet</code></dfn></td>
               <td>Imports a stylesheet.</td>
             </tr>
-            <tr id="link-rel-style">
-              <td><code>style</code></td>
+            <tr>
+              <td><dfn id="link-rel-style"><code>style</code></dfn></td>
               <td>Indicates a map resource that is equivalent to the current resource, in the same TCRS but with a different map style.</td>
             </tr>
-            <tr id="link-rel-self">
-              <td><code>self</code></td>
+            <tr>
+              <td><dfn id="link-rel-self"><code>self</code></dfn></td>
               <td>
                 Indicates that the linked resource is the current resource. When used in combination with the style rel value, indicates that the linked resource is the current selected style from a group of alternative styles for the
                 current layer. There should only be one such link that has both rel values 'self' and 'style' in a document.
               </td>
             </tr>
-            <tr id="link-rel-zoomin">
-              <td><code>zoomin</code></td>
+            <tr>
+              <td><dfn id="link-rel-zoomin"><code>zoomin</code></dfn></td>
               <td>Indicates a resource that may be used at a zoom level greater than the maximum zoom of the current extent.</td>
             </tr>
-            <tr id="link-rel-zoomout">
-              <td><code>zoomout</code></td>
+            <tr>
+              <td><dfn id="link-rel-zoomout"><code>zoomout</code></dfn></td>
               <td>Indicates a resource that may be used at a zoom level less than the minimum zoom of the current extent.</td>
             </tr>
-            <tr id="link-rel-tile">
-              <td><code>tile</code></td>
+            <tr>
+              <td><dfn id="link-rel-tile"><code>tile</code></dfn></td>
               <td>The templated resource reference identifies a tile</td>
             </tr>
-            <tr id="link-rel-image">
-              <td><code>image</code></td>
+            <tr>
+              <td><dfn id="link-rel-image"><code>image</code></dfn></td>
               <td>The templated resource reference identifies an image that covers the map extent</td>
             </tr>
-            <tr id="link-rel-features">
-              <td><code>features</code></td>
+            <tr>
+              <td><dfn id="link-rel-features"><code>features</code></dfn></td>
               <td>The templated resource reference identifies a feature collection</td>
             </tr>
-            <tr id="link-rel-query">
-              <td><code>query</code></td>
+            <tr>
+              <td><dfn id="link-rel-query"><code>query</code></dfn></td>
               <td>The templated resource reference identifies a query resource at a location</td>
             </tr>
           </tbody>
@@ -1726,7 +1726,7 @@
           </dd>
 
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes">Content attributes</a>:</dt>
-          <dd><code>units</code> — The name of the coordinate reference system whose measurement units are to be used by values submitted by child <a href="#the-input-element"><code>input</code></a> elements.</dd>
+          <dd><a href="#attr-extent-units"><code>units</code></a> — The name of the coordinate reference system whose measurement units are to be used by values submitted by child <a href="#the-input-element"><code>input</code></a> elements.</dd>
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-dom">DOM interface</a>:</dt>
           <dd></dd>
           <dd>
@@ -1747,7 +1747,7 @@
         <p>
           The <a href="#the-extent-element"><code>extent</code></a> element is a map-associated affordance, which contains input and link elements, whose job it is to serialize location event properties that can be submitted to a server for processing. 
         </p>
-        <p>The <code>units</code> attribute indicates the parent TCRS that location events shall be generated for, and serialized as requested by the <code>extent</code>'s contents.</p>
+        <p>The <dfn id="attr-extent-units"><code>units</code></dfn> attribute indicates the parent TCRS that location events shall be generated for, and serialized as requested by the <code>extent</code>'s contents.</p>
 
         </section>
         <section>
@@ -1760,7 +1760,7 @@
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-content-model">Content model</a>:</dt>
           <dd><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-content-nothing">Nothing</a>.</dd>
           <dt><a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes">Content attributes</a>:</dt>
-          <dd><code>type</code> — <a href="#attr-input-type-keywords">Enumerated keyword string</a> identifies the type of input.</dd>
+          <dd><a href="#attr-input-type"><code>type</code></a> — <a href="#attr-input-type-keywords">Enumerated keyword string</a> identifies the type of input.</dd>
           <dd><code>name</code> — The token to be used as a variable name in form serialization.</dd>
           <dd><code>value</code> — The current or default value of the name/value pair represented by the <code>input</code>.</dd>
           <dd>
@@ -1814,7 +1814,7 @@
           a specific map area.
         </p>
         <p>
-          The <code>type</code> attribute controls the data type (and associated control) of the element. It is an enumerated attribute. The following table lists the keywords and states for the attribute — the keywords in the left column
+          The <dfn id="attr-input-type"><code>type</code></a> attribute controls the data type (and associated control) of the element. It is an enumerated attribute. The following table lists the keywords and states for the attribute — the keywords in the left column
           map to the states in the cell in the second column on the same row as the keyword.
         </p>
         <table id="attr-input-type-keywords" class="def">
@@ -1831,31 +1831,31 @@
           </thead>
           <tbody>
             <tr>
-              <td><code>zoom</code></td>
+              <td><dfn id="attr-input-type-zoom"><code>zoom</code></dfn></td>
               <td>zoom</td>
               <td>An integer value</td>
               <td>A derived property of a displayed map</td>
             </tr>
             <tr>
-              <td><code>location</code></td>
+              <td><dfn id="attr-input-type-location"><code>location</code></dfn></td>
               <td>location</td>
               <td>A string value with no line breaks</td>
               <td>A location, the units and axis of which are specified by sibling attributes.</td>
             </tr>
             <tr>
-              <td><code>width</code></td>
+              <td><dfn id="attr-input-type-width"><code>width</code></dfn></td>
               <td>width of the extent</td>
               <td>A string value with no line breaks</td>
               <td>.</td>
             </tr>
             <tr>
-              <td><code>height</code></td>
+              <td><dfn id="attr-input-type-height"><code>height</code></dfn></td>
               <td>height of the extent</td>
               <td>A string value with no line breaks</td>
               <td>.</td>
             </tr>
             <tr>
-              <td><code>hidden</code></td>
+              <td><dfn id="attr-input-type-hidden"><code>hidden</code></dfn></td>
               <td>hidden</td>
               <td>An arbitrary string</td>
               <td>n/a</td>
@@ -1863,7 +1863,7 @@
           </tbody>
         </table>
         <p>
-          When the <code>type</code> attribute is in the "location" state, the <a href="#the-input-element"><code>input</code></a> may have three associated attributes: <code>units</code>, <code>axis</code> and <code>position</code>. <code>units</code> identifies the
+          When the <a href="#attr-input-type"><code>type</code></a> attribute is in the <a href="#attr-input-type-location"><code>location</code></a> state, the <a href="#the-input-element"><code>input</code></a> may have three associated attributes: <code>units</code>, <code>axis</code> and <code>position</code>. <code>units</code> identifies the
           associated coordinate system that the <code>location</code> is referred to. Each Tiled Coordinate Reference System (TCRS) instance may have one or more associated coordinate systems that are coordinate reference system by virtue
           of their defined association to the TCRS. For instance, the OSMTILE TCRS is associated to the underlying coordinate reference system known commonly as Web Mercator, by virtue of an origin location, defined in meters in the
           EPSG:3857 CRS plus a set of zoom level resolutions, and a transformation.
@@ -1882,12 +1882,12 @@
           </thead>
           <tbody>
             <tr>
-              <td><code>tcrs</code></td>
+              <td><dfn id="attr-input-units-tcrs"><code>tcrs</code></dfn></td>
               <td>For each zoom level, locations are expressed in pixel coordinates with the origin at the top-left corner of the pixel space.</td>
               <td>OGC Tile Matrix Set "tile matrix (i',j')".</td>
             </tr>
             <tr>
-              <td><code>pcrs</code></td>
+              <td><dfn id="attr-input-units-pcrs"><code>pcrs</code></dfn></td>
               <td>
                 The location is expressed in projected coordinates. Units are meters except for WGS84 where pcrs AND gcrs coordinates are in longitude-latitude. E.g. meters for OSMTILE, which has an associated projected coordinate reference
                 system of EPSG:3857.
@@ -1895,13 +1895,13 @@
               <td>Commonly represented as (x,y)</td>
             </tr>
             <tr>
-              <td><code>gcrs</code></td>
+              <td><dfn id="attr-input-units-gcrs"><code>gcrs</code></dfn></td>
               <td>The location is expressed in the geodetic coordinate system associated to the TCRS, e.g. decimal degrees for the OSMTILE TCRS.</td>
               <td>Commonly represented as (long,lat)</td>
             </tr>
 
             <tr>
-              <td><code>map</code></td>
+              <td><dfn id="attr-input-units-map"><code>map</code></dfn></td>
               <td>
                 The map coordinate system is defined by the state of the map system. At each pan and / or zoom, the map coordinate origin is reset within the Location is expressed in pixel coordinates with the origin starting at the upper
                 left corner of the extent increasing right and downwards, respectively.
@@ -1909,7 +1909,7 @@
               <td>WMS GetFeatureInfo (i,j)</td>
             </tr>
             <tr>
-              <td><code>tilematrix</code></td>
+              <td><dfn id="attr-input-units-tilematrix"><code>tilematrix</code></dfn></td>
               <td>
                 For each zoom level, locations are expressed in tile row and column index (0-based) values, with the origin at the top-left corner of the tiled space, with column index values increasing right and row index values increasing
                 downwards.
@@ -1917,7 +1917,7 @@
               <td>WMTS GetTile (TileCol, TileRow).</td>
             </tr>
             <tr>
-              <td><code>tile</code></td>
+              <td><dfn id="attr-input-units-tile"><code>tile</code></dfn></td>
               <td>
                 For each tile within every zoom level, a location is expressed in pixel coordinates with the origin at the upper left corner of the tile increasing right and downwards, respectively and ending at 256. The combination of
                 tilematrix and tile coordinates yields a location reference with pixel-sized precision.
@@ -1945,39 +1945,39 @@
           </thead>
           <tbody>
             <tr>
-              <td><code>top-left</code></td>
+              <td><dfn id="attr-input-position-top-left"><code>top-left</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>top-right</code></td>
+              <td><dfn id="attr-input-position-top-right"><code>top-right</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>bottom-left</code></td>
+              <td><dfn id="attr-input-position-bottom-left"><code>bottom-left</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>bottom-right</code></td>
+              <td><dfn id="attr-input-position-bottom-right"><code>bottom-right</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>center-left</code></td>
+              <td><dfn id="attr-input-position-center-left"><code>center-left</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>center-right</code></td>
+              <td><dfn id="attr-input-position-center-right"><code>center-right</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>top-center</code></td>
+              <td><dfn id="attr-input-position-top-center"><code>top-center</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>bottom-center</code></td>
+              <td><dfn id="attr-input-position-bottom-center"><code>bottom-center</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
             <tr>
-              <td><code>center</code></td>
+              <td><dfn id="attr-input-position-center"><code>center</code></dfn></td>
               <td>Identifies a location relative to a tile or extent.</td>
             </tr>
           </tbody>
@@ -1995,43 +1995,43 @@
           </thead>
           <tbody>
             <tr>
-              <td><code>x</code></td>
+              <td><dfn id="attr-input-axis-x"><code>x</code></dfn></td>
               <td>TCRS x axis.</td>
             </tr>
             <tr>
-              <td><code>y</code></td>
+              <td><dfn id="attr-input-axis-y"><code>y</code></dfn></td>
               <td>TCRS y axis.</td>
             </tr>
             <tr>
-              <td><code>row</code></td>
+              <td><dfn id="attr-input-axis-row"><code>row</code></dfn></td>
               <td>TileMatrix row axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>column</code></td>
+              <td><dfn id="attr-input-axis-column"><code>column</code></dfn></td>
               <td>TileMatrix column axis (parallel to x axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>i</code></td>
+              <td><dfn id="attr-input-axis-i"><code>i</code></dfn></td>
               <td>Map or tile CS i axis (parallel to x axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>j</code></td>
+              <td><dfn id="attr-input-axis-j"><code>j</code></dfn></td>
               <td>Map or tile CS j axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>easting</code></td>
+              <td><dfn id="attr-input-axis-easting"><code>easting</code></dfn></td>
               <td>Projected coordinate reference system axis (parallel to x axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>northing</code></td>
+              <td><dfn id="attr-input-axis-northing"><code>northing</code></dfn></td>
               <td>Projected coordinate reference system axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>latitude</code></td>
+              <td><dfn id="attr-input-axis-latitude"><code>latitude</code></dfn></td>
               <td>Geodetic coordinate reference system axis (parallel to y axis of TCRS).</td>
             </tr>
             <tr>
-              <td><code>longitude</code></td>
+              <td><dfn id="attr-input-axis-longitude"><code>longitude</code></dfn></td>
               <td>Geodetic coordinate reference system axis (parallel to x axis of TCRS).</td>
             </tr>
           </tbody>
