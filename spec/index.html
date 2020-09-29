@@ -808,6 +808,10 @@
         <p>The <dfn data-dfn-for="layer" data-dfn-type="dfn" id="attr-layer-disabled"><code>disabled</code></dfn> property is a read-only <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute">boolean attribute</a> indicator of the visibility of the layer on the map.  If the layer is not visible due to errors, including projection,
         zoom or extent mismatch, the property will be true and if the layer is present in the layer control (i.e. <a href="#attr-layer-hidden"><code>hidden</code></a> is false), it will be disabled in the <a href="#expose-a-user-interface-to-the-user">exposed user interface</a> to the user, i.e. not checkable.</p>
 
+        <p>The <dfn id="attr-layer-referrerpolicy"><code>referrerpolicy</code></dfn> attribute is a <a href="https://html.spec.whatwg.org/multipage/urls-and-fetching.html#referrer-policy-attribute">referrer policy attribute</a>. Its purpose is to set the <a href="https://w3c.github.io/webappsec-referrer-policy/#referrer-policy">referrer policy</a> used when <a href="https://fetch.spec.whatwg.org/#concept-fetch">fetching</a> the layer. [[Referrer-Policy]]</p>
+                        
+        <p>The <dfn id="attr-layer-crossorigin"><code>crossorigin</code></dfn> attribute is a <a href="https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-settings-attribute">CORS settings attribute</a>. Its purpose is to allow layers from third-party sites that allow cross-origin access. [[CORS]]</p>
+
         </section>
         <section>
         <h4>The <code>&lt;<dfn id="the-area-element">area</dfn>&gt;</code> element</h4>
